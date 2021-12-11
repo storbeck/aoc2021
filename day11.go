@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"os/exec"
-	"time"
 	"bufio"
 	"log"
 )
@@ -99,10 +97,6 @@ func main() {
 	var pa *Matrix = &grid
 
 	for x := 0; x < numTimesToRun; x++ {
-		c := exec.Command("clear")
-		c.Stdout = os.Stdout
-		c.Run()
-
 		// Increase all by +1
 		var i, j int
 		for i = 0; i < size; i++ {
@@ -127,7 +121,6 @@ func main() {
 		}
 		
 		fmt.Println("")
-		time.Sleep(time.Second / 5)
 	}
 	fmt.Printf("total flashes: %d\n", totalFlashes)
 	
