@@ -117,7 +117,7 @@ func main() {
 		// output
 		for i = 0; i < size; i++ {
 			for j = 0; j < size; j++ {
-				// flash our octopus
+				// flash our octopus if over energy level 9
 				flash(pa, i, j)
 				fmt.Printf("%d", grid[i][j])
 			}
