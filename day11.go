@@ -109,12 +109,6 @@ func main() {
 		for i = 0; i < size; i++ {
 			for j = 0; j < size; j++ {
 				flash(pa, i, j)
-			}
-		}
-
-		// Third loop to print it out
-		for i = 0; i < size; i++ {
-			for j = 0; j < size; j++ {
 				fmt.Printf("%d", grid[i][j])
 			}
 			fmt.Printf("\n")
